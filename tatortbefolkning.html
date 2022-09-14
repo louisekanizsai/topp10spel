@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gissa topp 10 - Svenska tätorter efter folkmängd</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body onload="visaRandomLista();"> <!-- när sidan laddas ska funktionen som visar den randomiserade listan köras --> 
+    <h1><a href="index.html">Gissa topp 10</a></h1>
+    <p class="spelbeskrivning">Följande 10 tätorter har störst befolkning i Sverige. Klicka på dem i den ordning du tror deras folkmängd är (störst först).</p>
+    <div class="listcontainer">
+        <div id="lista"></div>
+        <div id="faktaruta"></div>
+    </div>
+    <input type="button" class="gissaknapp" value="Gissa" onclick="check();">
+    <input type="button" class="restartknapp" value="Börja om" onClick="window.location.reload();">
+    <p class="source">Källa: <a href="https://www.scb.se/hitta-statistik/sverige-i-siffror/miljo/tatorter-i-sverige/">Statistiska centralbyrån</a></p>
+
+    <script>
+        let rattOrdning = ["Stockholm", "Göteborg", "Malmö", "Uppsala", "Upplands Väsby och Sollentuna", "Västerås", "Örebro", "Linköping", "Helsingborg", "Jönköping"]; // korrekt ordning
+
+        let slumpOrdning = ["Stockholm", "Göteborg", "Malmö", "Uppsala", "Upplands Väsby och Sollentuna", "Västerås", "Örebro", "Linköping", "Helsingborg", "Jönköping"]; // blir random
+
+        let fakta = ["Du hade rätt! Här är tätorternas befolkning (2020):", "1. Stockholm — 1,617,407", "2. Göteborg — 607,882", "3. Malmö — 325,069", "4. Uppsala — 166,698", "5. Upplands Väsby och Sollentuna — 149,701", "6. Västerås — 128,660", "7. Örebro — 126,604", "8. Linköping — 115,682", "9. Helsingborg — 113,828", "10. Jönköping — 100,579"]; // skrivs ut om/när man har alla rätt
+    </script>
+    <script type="text/javascript" src="jsfile1.js"></script>
+</body>
+</html>

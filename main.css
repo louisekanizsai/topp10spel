@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background: #E8EAE6;
+    font: 1em Arial, sans-serif;
+}
+
+h1 {
+    color: #7C9473;
+    text-align: center;
+    font: bold 30px Arial, sans-serif;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.beskrivning {
+    margin: 20px 40px 10px 40px;
+}
+
+.spelcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.spel:hover {
+    background-color: #65795d;
+    font-size: 1.05em;
+}
+
+.spel {
+    width: 250px;
+    height: 220px;
+    display: block;
+    margin: 20px;
+    border-radius: 30px 30px 20px 20px;
+    background-color: #7C9473;
+}
+
+ .spelbild {
+    width: 250px;
+    border-radius: 30px 30px 0 0;
+}
+
+.spelnamn {
+    color: white;
+    text-align: center;
+    padding: 10px;
+} 
+
+a:link {
+    text-decoration: none;
+    color: #7C9473;
+}
+
+a:visited {
+    color: #7C9473;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #65795d;
+}
+
+/* undersidor */ 
+
+.spelbeskrivning {
+    margin: 20px 40px 10px 40px;
+}
+
+.divelement {
+    border: 5px solid #bcd7d1;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    width: 225px;
+}
+
+.listcontainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 4% 10px 40px;
+}
+
+.facitelement {
+    padding: 15px 20px 15px 20px;
+    color: white;
+}
+
+#faktaruta {
+    background: #7C9473;
+}
+
+#faktaruta :first-child {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 15px;
+}
+
+.gissaknapp,
+.restartknapp {
+    background: #7C9473;
+    color: white;
+    margin: 0 0 0 40px;
+    padding: 15px 24px;
+    text-align: center;
+    font-size: .8em;
+    border: none;
+}
+
+.gissaknapp:hover,
+.restartknapp:hover {
+    background: #65795d;
+}
+
+.source {
+    position:fixed;
+    bottom:1%;
+    right:1%;
+}

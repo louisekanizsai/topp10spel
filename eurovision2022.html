@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gissa topp 10 - Placering i Eurovision Song Contest 2022</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body onload="visaRandomLista();"> <!-- när sidan laddas ska funktionen som visar den randomiserade listan köras -->
+    <h1><a href="index.html">Gissa topp 10</a></h1>
+    <p class="spelbeskrivning">Följande länder placerade sig i topp 10 i Eurovision Song Contest 2022. Klicka på dem i den ordning du tror att de hamnade.</p>
+    <div class="listcontainer">
+        <div id="lista"></div>
+        <div id="faktaruta"></div> 
+    </div>
+    <input type="button" class="gissaknapp" value="Gissa" onclick="check();">
+    <input type="button" class="restartknapp" value="Börja om" onClick="window.location.reload();">
+    <p class="source">Källa: <a href="https://eurovisionworld.com/eurovision/2022">Eurovisionworld</a></p>
+
+    <script>
+        let rattOrdning = ["Ukraina (Kalush Orchestra - Stefania)", "Storbritannien (Sam Ryder - Space Man)", "Spanien (Chanel - SloMo)", "Sverige (Cornelia Jakobs - Hold Me Closer)", "Serbien (Konstrakta - In Corpore Sano)", "Italien (Mahmood & Blanco - Brividi)", "Moldavien (Trenuleţul - Zdob şi Zdub)", "Grekland (Amanda Tenfjord - Die Together)", "Portugal (Maro - Saudade, saudade)", "Norge (Subwoolfer - Give That Wolf a Banana)"]; // korrekt ordning
+
+        let slumpOrdning = ["Ukraina (Kalush Orchestra - Stefania)", "Storbritannien (Sam Ryder - Space Man)", "Spanien (Chanel - SloMo)", "Sverige (Cornelia Jakobs - Hold Me Closer)", "Serbien (Konstrakta - In Corpore Sano)", "Italien (Mahmood & Blanco - Brividi)", "Moldavien (Trenuleţul - Zdob şi Zdub)", "Grekland (Amanda Tenfjord - Die Together)", "Portugal (Maro - Saudade, saudade)", "Norge (Subwoolfer - Give That Wolf a Banana)"]; // blir random
+
+        let fakta = ["Du hade rätt! Här är ländernas placering och poäng:", "1. Ukraina (Kalush Orchestra - Stefania) — 631 p", "2. Storbritannien (Sam Ryder - Space Man) — 466 p", "3. Spanien (Chanel - SloMo) — 459 p", "4. Sverige (Cornelia Jakobs - Hold Me Closer) — 438 p", "5. Serbien (Konstrakta - In Corpore Sano) — 312 p", "6. Italien (Mahmood & Blanco - Brividi) — 268 p", "7. Moldavien (Trenuleţul - Zdob şi Zdub) — 253 p", "8. Grekland (Amanda Tenfjord - Die Together) — 215 p", "9. Portugal (Maro - Saudade, saudade) — 207 p", "10. Norge (Subwoolfer - Give That Wolf a Banana) — 182 p"]; // skrivs ut om/när man har alla rätt
+    </script>
+    <script type="text/javascript" src="jsfile1.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gissa topp 10 - Europas länder efter folkmängd</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body onload="visaRandomLista();"> <!-- när sidan laddas ska funktionen som visar den randomiserade listan köras -->
+    <h1><a href="index.html">Gissa topp 10</a></h1>
+    <p class="spelbeskrivning">Följande 10 länder har störst befolkning i Europa. Klicka på dem i den ordning du tror storleken på deras befolkning är (störst först).</p>
+    <div class="listcontainer">
+        <div id="lista"></div>
+        <div id="faktaruta"></div>
+    </div>
+    <input type="button" class="gissaknapp" value="Gissa" onclick="check();">
+    <input type="button" class="restartknapp" value="Börja om" onClick="window.location.reload();">
+    <p class="source">Källa: <a href="https://www.worldometers.info/population/countries-in-europe-by-population/">Worldometers</a></p>
+
+    <script>
+        let rattOrdning = ["Ryssland", "Tyskland", "Storbritannien", "Frankrike", "Italien", "Spanien", "Ukraina", "Polen", "Rumänien", "Nederländerna"]; // korrekt ordning
+
+        let slumpOrdning = ["Ryssland", "Tyskland", "Storbritannien", "Frankrike", "Italien", "Spanien", "Ukraina", "Polen", "Rumänien", "Nederländerna"]; // blir random
+
+        let fakta = ["Du hade rätt! Här är ländernas befolkning (2020):", "1. Ryssland — 145,934,462 (ca 110,000,000 i Europa)", "2. Tyskland — 83,783,942", "3. Storbritannien — 67,886,011", "4. Frankrike — 65,273,511", "5. Italien — 60,461,826", "6. Spanien — 46,754,778", "7. Ukraina — 43,733,762", "8. Polen — 37,846,611", "9. Rumänien — 19,237,691", "10. Nederländerna — 17,134,872"]; // skrivs ut om/när man har alla rätt
+    </script>
+    <script type="text/javascript" src="jsfile1.js"></script> 
+</body>
+</html>

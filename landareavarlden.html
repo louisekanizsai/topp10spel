@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gissa topp 10 - Länder efter area</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body onload="visaRandomLista();"> <!-- när sidan laddas ska funktionen som visar den randomiserade listan köras --> 
+    <h1><a href="index.html">Gissa topp 10</a></h1>
+    <p class="spelbeskrivning">Följande 10 länder har mest landmassa/störst area i världen. Klicka på dem i den ordning du tror storleken på deras landmassa är (störst först).</p>
+    <div class="listcontainer">
+        <div id="lista"></div>
+        <div id="faktaruta"></div>
+    </div>
+    <input type="button" class="gissaknapp" value="Gissa" onclick="check();">
+    <input type="button" class="restartknapp" value="Börja om" onClick="window.location.reload();">
+    <p class="source">Källa: <a href="https://www.worldometers.info/geography/largest-countries-in-the-world/">Worldometers</a></p>
+
+    <script>
+        let rattOrdning = ["Ryssland", "Kina", "USA", "Kanada", "Brasilien", "Australien", "Indien", "Argentina", "Kazakstan", "Algeriet"]; // korrekt ordning
+
+        let slumpOrdning = ["Ryssland", "Kina", "USA", "Kanada", "Brasilien", "Australien", "Indien", "Argentina", "Kazakstan", "Algeriet"]; // blir random
+
+        let fakta = ["Du hade rätt! Här är ländernas totala area (km²):", "1. Ryssland - 16,376,870", "2. Kina - 9,388,211", "3. USA - 9,147,420", "4. Kanada - 9,093,510", "5. Brasilien - 8,358,140", "6. Australien - 7,682,300", "7. Indien - 2,973,190", "8. Argentina - 2,736,690", "9. Kazakstan - 2,699,700", "10. Algeriet - 2,381,740"]; // skrivs ut om/när man har alla rätt
+    </script>
+    <script type="text/javascript" src="jsfile1.js"></script>
+</body>
+</html>
